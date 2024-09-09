@@ -1,3 +1,6 @@
 {
-  "dotnet.defaultSolution": "PinkUrn.sln"
+  "dotnet.defaultSolution": "PinkUrn.sln",
+  "cSpell.words": [
+    "hypergeometric"
+  ]
 }

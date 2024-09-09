@@ -1,4 +1,6 @@
-class FractionConverter
+namespace PinkUrn;
+
+internal class FractionConverter
 {
   public static (int numerator, int denominator) ToFraction(double decimalValue)
   {
