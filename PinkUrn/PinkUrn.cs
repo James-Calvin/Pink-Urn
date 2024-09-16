@@ -81,7 +81,7 @@ public class PinkUrn
     // This is the number of non-event (confusingly called successes for 
     // the negative geometric distribution) after equating the mean to the 
     // mean of the constant probability event.
-    InitialWhiteBalls = WhiteBalls = totalBalls - scalar * numerator + 1;
+    InitialWhiteBalls = WhiteBalls = scalar * (denominator - numerator);
 
     // The number of event balls is the remaining total balls after 
     // subtracting the calculated number of white balls
