@@ -5,6 +5,7 @@ The **Pink Urn** is a specialized probability urn model that improves the consis
 ## How It Works
 
 In the Pink Urn model:
+
 - The urn contains a mix of **red (event) balls** and **white (non-event) balls**.
 - When a white ball is drawn, it is not replaced, increasing the chances of drawing a red ball on subsequent trials.
 - When a red ball is drawn, the urn resets, and the process begins again.
@@ -25,7 +26,7 @@ The Pink Urn class can be used to model events with more consistent probabilitie
 ### Example
 
 ```csharp
-using PinkUrnNamespace;
+using PinkUrnModel;
 
 class Program
 {
@@ -49,7 +50,7 @@ class Program
 
 - **`PinkUrn(int redBalls, int whiteBalls)`**  
   Initializes the Pink Urn with a specific number of red (event) and white (non-event) balls.
-  
+
   ```csharp
   PinkUrn urn = new PinkUrn(5, 100);
   ```
@@ -86,10 +87,10 @@ class Program
 
 We simulated the Pink Urn model and a simple constant probability model over 50,000 players performing 40,000 trials each using a 0.02 probability of success. Here are the results:
 
-| Model       | Successes  | Failures      | Mean Probability | Mean Failure Streak | Failure Streak Std. Dev. | Best Failure Streak |
-|-------------|------------|---------------|------------------|---------------------|--------------------------|---------------------|
-| Simple      | 39,992,769 | 1,960,007,231 | 0.0199963845     | 49.00904038         | 49.44142142              | 988                 |
-| Pink Urn    | 39,986,123 | 1,960,013,877 | 0.0199930615     | 49.01735227         | 34.99427645              | 147                 |
+| Model    | Successes  | Failures      | Mean Probability | Mean Failure Streak | Failure Streak Std. Dev. | Best Failure Streak |
+| -------- | ---------- | ------------- | ---------------- | ------------------- | ------------------------ | ------------------- |
+| Simple   | 39,992,769 | 1,960,007,231 | 0.0199963845     | 49.00904038         | 49.44142142              | 988                 |
+| Pink Urn | 39,986,123 | 1,960,013,877 | 0.0199930615     | 49.01735227         | 34.99427645              | 147                 |
 
 The Pink Urn model has a lower standard deviation of successes, failures, and failure streaks, meaning that it creates a more consistent experience across players. Players in the Pink Urn model also experience shorter extreme failure streaks, reducing frustration caused by long runs of bad luck.
 
@@ -106,4 +107,3 @@ Or search for `PinkUrn` in your NuGet package manager.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
