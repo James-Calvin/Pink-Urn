@@ -1,4 +1,4 @@
-﻿namespace PinkUrn;
+﻿namespace PinkUrnModel;
 
 /// <summary>
 /// Represents an urn model with red (event) and white (non-event) balls which simulates a random event with a given probability, but with more statistically consistent experience.

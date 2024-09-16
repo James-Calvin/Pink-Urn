@@ -1,4 +1,4 @@
-namespace PinkUrn;
+namespace PinkUrnModel;
 
 internal class FractionConverter
 {
