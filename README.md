@@ -1,6 +1,6 @@
 # Pink Urn
 
-The **Pink Urn** is a specialized probability urn model that improves the consistency of random event distributions, such as those found in MMO games. It transforms a simple constant probability event model into a negative hypergeometric distribution, which helps smooth out streaks of successes and failures, creating a more balanced player experience.
+The **Pink Urn** is a "luck normalization" technique. It uses specialized probability urn model that improves the consistency of random event distributions, such as those found in MMO games. It transforms a simple constant probability event model into a negative hypergeometric distribution, which helps smooth out streaks of successes and failures, creating a more consistent player experience all based on a simple probability.
 
 ## How It Works
 
